@@ -1,0 +1,112 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #090a0c;
+    color: #fff;
+  }
+  
+  nav {
+    background: transparent;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    border-radius: 5px;
+    padding: 8px 12px;
+  }
+  
+  /* Align "Home," "About," and "Contact" links to the top right */
+  nav .top-right-links {
+    margin-left: auto;
+  }
+  
+  /* Header Styles */
+  h1 {
+    text-align: center;
+    color: #bb86fc;
+  }
+  
+  /* Form Styles */
+  form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input,
+  textarea {
+    width: calc(100% - 16px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background: linear-gradient(to right, #4f518e, #4f51ec);
+    color: #fff;
+  }
+  
+  input[type="submit"] {
+    background-color: #bb86fc;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Center Styles */
+  center {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  span {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  footer h2 {
+    margin-bottom: 10px;
+  }
+  
+  address {
+    font-style: normal;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav__item {
+    display: inline-block;
+    margin-right: 30px;
+  }
+  
+  /* Additional Styles for Different Components */
+  .footer__addr h2,
+  .footer__nav h2,
+  .legal p {
+    color: #fff;
+  }
+  
