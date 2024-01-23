@@ -6,20 +6,18 @@ import WorkingCapital from "./WorkingCapital";
 import ReturnOnEquity from "./ReturnOnEquity";
 import NiftyIT from "./NiftyIT";
 import ProjectsInvolved from "./ProjectsInvolved";
-import ProjectsDelivered from "./ProjectsDelivered";
+import { Button } from "../ui/button";
 
 const Dashboard = () => {
   return (
     <div>
-      <h1>Dashboard</h1>
       <EmployeeTurnoverRate />
       <EmployeeRetentionRate />
       <GrossProfitMargin />
       <WorkingCapital />
-      {/* <ReturnOnEquity />
+      <ReturnOnEquity />
       <NiftyIT />
       <ProjectsInvolved />
-      <ProjectsDelivered /> */}
     </div>
   );
 };

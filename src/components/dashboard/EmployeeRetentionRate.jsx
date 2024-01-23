@@ -36,15 +36,17 @@ const EmployeeRetentionRate = () => {
     >
       <Flex justifyContent="start" className="space-x-4">
         <Icon variant="outlined" icon={UserIcon} size="sm" color="rose" />
-        <Title className="truncate">Employee Retention Rate</Title>
+        <Title className="truncate text-white font-semiBold">
+          Employee Retention Rate
+        </Title>
       </Flex>
       <div>
         <LineChart
-          className="h-72 mt-1 max-w-2xl"
+          className="h-72 mt-1 max-w-2xl text-white"
           data={empRetRate}
           index="fy"
           categories={["First Half", "Second Half", "Average"]}
-          colors={["neutral", "indigo", "rose"]}
+          colors={["red", "blue", "emerald"]}
           yAxisWidth={30}
           onValueChange={(v) => setValue(v)}
           // enableLegendSlider={true}
@@ -58,11 +60,9 @@ const EmployeeRetentionRate = () => {
           <Callout
             title={formattedTitle}
             icon={percentageChange >= 0 ? TrendingUpIcon : TrendingDownIcon}
-            color={percentageChange >= 0 ? "emerald" : "rose"}
+            color={percentageChange >= 0 ? "emerald" : "red"}
             className="mt-4"
-          >
-            {/* Display the text accordingly */}
-          </Callout>
+          ></Callout>
         )}
       </div>
     </Card>

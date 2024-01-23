@@ -1,3 +1,22 @@
+
+/* Other global styles or resets go here */
+@font-face {
+    font-family: 'light';
+    src: local("Geist-Light"),  url("./fonts/Geist-Light.otf") format("opentype");
+}
+@font-face {
+    font-family: 'Bold';
+    src: local("Geist-Bold"),  url("./fonts/Geist-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: 'SemiBold';
+    src: local("Geist-SemiBold"),  url("./fonts/Geist-SemiBold.otf") format("opentype");
+}
+@font-face {
+    font-family: 'Regular';
+    src: local("Geist-Regular"),  url("./fonts/Geist-Regular.otf") format("opentype");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

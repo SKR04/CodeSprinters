@@ -53,7 +53,7 @@ const EmployeeTurnOverRate = () => {
         <Title className="truncate">Employee Turnover Rate</Title>
       </Flex>
       <div>
-        <AreaChart
+        <LineChart
           className="h-72 mt-1 max-w-2xl"
           data={empTor}
           index="fy"

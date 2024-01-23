@@ -1,6 +1,7 @@
 import forecastHiringData from '../assets/forecast_hiring.json';
 
-const grossProfitData = (key) => {
+const updatedData = (key) => {
+  // console.log(key)
     let currentFinancialYear = 2022;
   const resultData = [];
 
@@ -8,7 +9,7 @@ const grossProfitData = (key) => {
     const grossProfit = forecastHiringData[i];
     const value  = {
         "fy": currentFinancialYear--,
-        "Gross Profit": grossProfit[key],
+        [key]: grossProfit[key],
     }
 
     resultData.push(value);
@@ -17,4 +18,4 @@ const grossProfitData = (key) => {
   return resultData.reverse();
 }
 
-export default grossProfitData;
+export default updatedData;

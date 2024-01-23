@@ -19,15 +19,17 @@ import { TrendingUpIcon, TrendingDownIcon } from "@heroicons/react/solid";
 
 const GrossProfitMargin = () => {
   let grossProfitMarginData = grossProfitData("Gross profit margin");
+
+  // console.log(grossProfitMarginData);
   const [percentageChange, setPercentageChange] = useState(null);
   const [formattedTitle, setFormattedTitle] = useState("");
 
-  console.log(grossProfitMarginData);
+  // console.log(grossProfitMarginData);
 
   useEffect(() => {
     const len = grossProfitMarginData.length;
-    const currentYear = grossProfitMarginData[len - 1]["Gross Profit"];
-    const previousYear = grossProfitMarginData[len - 2]["Gross Profit"];
+    const currentYear = grossProfitMarginData[len - 1]["Gross profit margin"];
+    const previousYear = grossProfitMarginData[len - 2]["Gross profit margin"];
 
     const change = ((currentYear - previousYear) / previousYear) * 100;
     setPercentageChange(change);
@@ -53,11 +55,9 @@ const GrossProfitMargin = () => {
           className="h-72 mt-1 max-w-2xl"
           data={grossProfitMarginData}
           index="fy"
-          categories={["Gross Profit"]}
+          categories={["Gross profit margin"]}
           colors={["indigo"]}
           yAxisWidth={30}
-
-          // Add other relevant props as needed
         />
         {percentageChange !== null && (
           <Callout
@@ -65,11 +65,8 @@ const GrossProfitMargin = () => {
             icon={percentageChange >= 0 ? TrendingUpIcon : TrendingDownIcon}
             color={percentageChange >= 0 ? "emerald" : "rose"}
             className="mt-4"
-          >
-            {/* Display the text accordingly */}
-          </Callout>
+          ></Callout>
         )}
-        {/* Add Callout for percentage change if needed */}
       </div>
     </Card>
   );

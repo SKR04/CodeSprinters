@@ -24,7 +24,7 @@ const WorkingCapital = () => {
   const [percentageChange, setPercentageChange] = useState(null);
   const [formattedTitle, setFormattedTitle] = useState("");
 
-  console.log(workingCapitalData);
+  // console.log(workingCapitalData);
 
   useEffect(() => {
     const len = workingCapitalData.length;
@@ -56,7 +56,6 @@ const WorkingCapital = () => {
           onValueChange={(v) => setValue(v)}
           showAnimation={true}
           animationDuration={2}
-          // Add other relevant props as needed
         />
         {percentageChange !== null && (
           <Callout
@@ -64,11 +63,8 @@ const WorkingCapital = () => {
             icon={percentageChange >= 0 ? TrendingUpIcon : TrendingDownIcon}
             color={percentageChange >= 0 ? "emerald" : "rose"}
             className="mt-4"
-          >
-            {/* Display the text accordingly */}
-          </Callout>
+          ></Callout>
         )}
-        {/* Add Callout for percentage change if needed */}
       </div>
     </Card>
   );
