@@ -22,15 +22,15 @@ function Navbar() {
           <span className="text-white font-semibold text-2xl ml-4">HireM</span>
         </div>
         <div className="space-x-8 mr-6">
-          <Link to="/dashboard" className="text-white">
+          <a href="http://www.google.com" className="text-white">
             Fryde
-          </Link>
-          <Link to="/dashboard" className="text-white">
+          </a>
+          <a href="http://www.google.com" className="text-white">
             Workflow Analysis
-          </Link>
-          <Link to="/dashboard" className="text-white">
-            Forecast Hiring
-          </Link>
+          </a>
+          <a href="http://www.google.com" className="text-white">
+            Forcast Hiring
+          </a>
           {/* Add more links if needed */}
         </div>
       </div>
