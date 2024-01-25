@@ -7,23 +7,17 @@ import "./fonts/Geist-Light.otf";
 import "./fonts/Geist-Bold.otf";
 import "./fonts/Geist-SemiBold.otf";
 import "./fonts/Geist-Regular.otf";
-import Fryde from "./components/Fryde";
-import Workforce from "./components/Workforce";
-import Forcast from "./components/Forcast";
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <div className="relative sm:-8 p-2  min-h-screen flex flex-row">
-        <div className="w-full">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/dashboard" element={<Dashboard />} />
-          </Routes>
-          <Footer />
-        </div>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+
+      <Footer />
     </BrowserRouter>
   );
 }

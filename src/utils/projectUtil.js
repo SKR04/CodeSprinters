@@ -4,7 +4,7 @@ const formattedProjects = (key) => {
   let currentFinancialYear = 2022;
   const resultData = [];
 
-  for (let i = 0; i < 26; i += 2) {
+  for (let i = 0; i < 30; i += 2) {
     const project1 = forecastHiringData[i];
     const project2 = forecastHiringData[i + 1];
 

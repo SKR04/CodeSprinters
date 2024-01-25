@@ -29,7 +29,7 @@ const ReturnOnEquity = () => {
     <Card
       decoration="left"
       decorationColor="purple"
-      className="max-w-2xl mx-auto p-6"
+      className="max-w-[52rem] max-h-screen mx-3 mt-2.5 p-6 bg-white"
     >
       <Flex justifyContent="start" className="space-x-4">
         <Icon
@@ -38,25 +38,18 @@ const ReturnOnEquity = () => {
           size="sm"
           color="purple"
         />
-        <Title className="truncate">Return on Equity</Title>
+        <Title className="truncate font-semiBold">Return on Equity</Title>
       </Flex>
       <div>
         <BarChart
-          className="h-72 mt-1 max-w-2xl"
+          className="h-72 mt-1 max-w-[52rem]"
           data={returnOnEquityChartData}
           index="fy"
           categories={["Return on Equity"]}
           colors={["purple"]}
           yAxisWidth={30}
+          showAnimation={true}
         />
-        {percentageChange !== null && (
-          <Callout
-            title={formattedTitle}
-            icon={percentageChange >= 0 ? TrendingUpIcon : TrendingDownIcon}
-            color={percentageChange >= 0 ? "emerald" : "rose"}
-            className="mt-4"
-          ></Callout>
-        )}
       </div>
     </Card>
   );

@@ -63,7 +63,7 @@ module.exports = {
             faint: colors.blue[50],
             muted: colors.blue[200],
             subtle: colors.blue[400],
-            DEFAULT: colors.blue[500],
+            DEFAULT: colors.black,
             emphasis: colors.blue[700],
             inverted: colors.white,
           },
@@ -100,7 +100,7 @@ module.exports = {
           background: {
             muted: "#131A2B",
             subtle: colors.gray[800],
-            DEFAULT: colors.gray[900],
+            DEFAULT: colors.black,
             emphasis: colors.gray[300],
           },
           border: {
@@ -118,6 +118,7 @@ module.exports = {
           },
         },
       },
+
       boxShadow: {
         // light
         "tremor-input": "0 1px 2px 0 rgb(0 0 0 / 0.05)",

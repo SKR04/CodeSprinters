@@ -21,9 +21,9 @@ const ProjectsInvolved = () => {
 
   return (
     <Card
-      className="max-w-3xl mx-auto p-6"
       decoration="left"
-      decorationColor="blue"
+      decorationColor="purple"
+      className="max-w-[52rem] max-h-screen mx-3 mt-2.5 p-6 bg-white"
     >
       <Flex justifyContent="start" className="space-x-4">
         <Icon
@@ -36,7 +36,7 @@ const ProjectsInvolved = () => {
       </Flex>
       <div>
         <AreaChart
-          className="h-72 mt-2 max-w-3xl"
+          className="h-72 mt-1 max-w-[52rem]"
           data={projectData}
           index="fy"
           categories={[
@@ -48,7 +48,6 @@ const ProjectsInvolved = () => {
           curveType="monotone"
           yAxisWidth={30}
           showAnimation={true}
-          animationDuration={4}
           autoMinValue={true}
           onValueChange={(v) => setValue(v)}
         />

@@ -3,7 +3,7 @@
     "Employee turnover rate": 8.5,
     "Employee retention rate": 91.5,
     "Organisation Expansion index": 0.3,
-    "No of Large scale projects": 34,
+    "No of Large scale projects": 45,
     "No of medium and small scale projects": 7,
     "NIFTY": 21658.25,
     "SENSEX": 71968.72,
@@ -15,7 +15,7 @@
     "Return on Equity": 18.5,
     "Candidates Hired": 2000,
     "Projects in progress": 10,
-    "No of projects delivered": 27
+    "No of projects delivered": 37
   },
   {
     "Employee turnover rate": 9,
@@ -104,7 +104,7 @@
     "Quick Ratio": 1.87,
     "Return on Equity": 17,
     "Candidates Hired": 2500,
-    "Projects in progress": 28,
+    "Projects in progress": 20,
     "No of projects delivered": 20
   },
   {
@@ -195,7 +195,7 @@
     "Return on Equity": 11,
     "Candidates Hired": 1200,
     "Projects in progress": 7,
-    "No of projects delivered": 29
+    "No of projects delivered": 26
   },
   {
     "Employee turnover rate": 6,
@@ -267,7 +267,7 @@
     "Return on Equity": 7,
     "Candidates Hired": 200,
     "Projects in progress": 2,
-    "No of projects delivered": 13
+    "No of projects delivered": 11
   },
   {
     "Employee turnover rate": 20,
@@ -486,6 +486,42 @@
     "No of projects delivered": 16
   },
   {
+    "Employee turnover rate": 4.5,
+    "Employee retention rate": 95.5,
+    "Organisation Expansion index": 0.6,
+    "No of Large scale projects": 20,
+    "No of medium and small scale projects": 3,
+    "NIFTY": 6130.51,
+    "SENSEX": 20509.09,
+    "NIFTY IT": 7491.12,
+    "GDP": 1590889,
+    "Gross profit margin": 33.4,
+    "Working Capital": "13,656",
+    "Quick Ratio": 0.85,
+    "Return on Equity": 11,
+    "Candidates Hired": 1500,
+    "Projects in progress": 8,
+    "No of projects delivered": 15
+  },
+  {
+    "Employee turnover rate": 6,
+    "Employee retention rate": 94,
+    "Organisation Expansion index": 0.7,
+    "No of Large scale projects": 15,
+    "No of medium and small scale projects": 5,
+    "NIFTY": 4882.05,
+    "SENSEX": 17700.9,
+    "NIFTY IT": 5928.32,
+    "GDP": 1488556,
+    "Gross profit margin": 32.34,
+    "Working Capital": "12,567",
+    "Quick Ratio": 0.95,
+    "Return on Equity": 10,
+    "Candidates Hired": 1300,
+    "Projects in progress": 1,
+    "No of projects delivered": 13
+  },
+  {
     "Employee turnover rate": 5,
     "Employee retention rate": 95,
     "Organisation Expansion index": 0.8,
@@ -501,7 +537,7 @@
     "Return on Equity": 5,
     "Candidates Hired": 500,
     "Projects in progress": 2,
-    "No of projects delivered": 15
+    "No of projects delivered": 9
   },
   {
     "Employee turnover rate": 4.5,
@@ -518,7 +554,7 @@
     "Quick Ratio": 0.7,
     "Return on Equity": 4,
     "Candidates Hired": 100,
-    "Projects in progress": 1,
-    "No of projects delivered": 8
+    "Projects in progress": 2,
+    "No of projects delivered": 4
   }
 ]
