@@ -1,5 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { Card, Title, Flex, Icon, LineChart, Callout } from "@tremor/react";
+import {
+  Card,
+  Title,
+  Flex,
+  Icon,
+  LineChart,
+  Callout,
+  AreaChart,
+} from "@tremor/react";
 
 import processForecastData from "../../utils/formattedData.js";
 
@@ -31,39 +39,30 @@ const EmployeeRetentionRate = () => {
   return (
     <Card
       decoration="left"
-      decorationColor="rose"
-      className="max-w-2xl mt-10 max-h-screen mx-auto p-6"
+      decorationColor="purple"
+      className="max-w-[52rem] max-h-screen mx-3 mt-2.5 p-6 bg-white"
     >
       <Flex justifyContent="start" className="space-x-4">
-        <Icon variant="outlined" icon={UserIcon} size="sm" color="rose" />
-        <Title className="truncate">Employee Retention Rate</Title>
+        <Icon variant="outlined" icon={UserIcon} size="sm" color="indigo" />
+        <Title className="truncate font-semiBold">
+          Employee Retention Rate
+        </Title>
       </Flex>
       <div>
         <LineChart
-          className="h-72 mt-1 max-w-2xl"
+          className="h-72 mt-1 max-w-[52rem] text-black"
           data={empRetRate}
           index="fy"
           categories={["First Half", "Second Half", "Average"]}
-          colors={["neutral", "indigo", "rose"]}
+          colors={["red", "blue", "emerald"]}
           yAxisWidth={30}
           onValueChange={(v) => setValue(v)}
           // enableLegendSlider={true}
           showAnimation={true}
-          animationDuration={2}
           curveType="monotone"
           tickGap={12}
           autoMinValue={true}
         />
-        {percentageChange !== null && (
-          <Callout
-            title={formattedTitle}
-            icon={percentageChange >= 0 ? TrendingUpIcon : TrendingDownIcon}
-            color={percentageChange >= 0 ? "emerald" : "rose"}
-            className="mt-4"
-          >
-            {/* Display the text accordingly */}
-          </Callout>
-        )}
       </div>
     </Card>
   );

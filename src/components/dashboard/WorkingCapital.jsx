@@ -24,7 +24,7 @@ const WorkingCapital = () => {
   const [percentageChange, setPercentageChange] = useState(null);
   const [formattedTitle, setFormattedTitle] = useState("");
 
-  console.log(workingCapitalData);
+  // console.log(workingCapitalData);
 
   useEffect(() => {
     const len = workingCapitalData.length;
@@ -40,14 +40,20 @@ const WorkingCapital = () => {
   }, [workingCapitalData, setPercentageChange, setFormattedTitle]);
 
   return (
-    <Card className="max-w-3xl mx-auto p-6">
+    <Card
+      decoration="left"
+      decorationColor="purple"
+      className="max-w-[52rem] max-h-screen mx-3 mt-2.5 p-6 bg-white"
+    >
       <Flex justifyContent="start" className="space-x-4">
         <Icon variant="outlined" icon={FaBriefcase} size="sm" color="indigo" />
-        <Title className="truncate">Working Capital</Title>
+        <Title className="truncate text-black font-semiBold">
+          Working Capital
+        </Title>
       </Flex>
       <div>
         <BarChart
-          className="h-72 mt-1 max-w-3xl"
+          className="h-72 mt-1 max-w-[52rem] text-black"
           data={workingCapitalData}
           index="fy"
           categories={["First Half", "Second Half"]}
@@ -55,20 +61,15 @@ const WorkingCapital = () => {
           yAxisWidth={30}
           onValueChange={(v) => setValue(v)}
           showAnimation={true}
-          animationDuration={2}
-          // Add other relevant props as needed
         />
-        {percentageChange !== null && (
+        {/*percentageChange !== null && (
           <Callout
             title={formattedTitle}
             icon={percentageChange >= 0 ? TrendingUpIcon : TrendingDownIcon}
             color={percentageChange >= 0 ? "emerald" : "rose"}
             className="mt-4"
-          >
-            {/* Display the text accordingly */}
-          </Callout>
-        )}
-        {/* Add Callout for percentage change if needed */}
+          ></Callout>
+        )*/}
       </div>
     </Card>
   );

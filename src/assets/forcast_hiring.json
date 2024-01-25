@@ -3,7 +3,7 @@
     "Employee turnover rate": 8.5,
     "Employee retention rate": 91.5,
     "Organisation Expansion index": 0.3,
-    "No of Large scale projects": 45,
+    "No of Large scale projects": 34,
     "No of medium and small scale projects": 7,
     "NIFTY": 21658.25,
     "SENSEX": 71968.72,
@@ -15,7 +15,7 @@
     "Return on Equity": 18.5,
     "Candidates Hired": 2000,
     "Projects in progress": 10,
-    "No of projects delivered": 37
+    "No of projects delivered": 27
   },
   {
     "Employee turnover rate": 9,
@@ -557,4 +557,5 @@
     "Projects in progress": 2,
     "No of projects delivered": 4
   }
+
 ]

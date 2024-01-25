@@ -19,15 +19,17 @@ import { TrendingUpIcon, TrendingDownIcon } from "@heroicons/react/solid";
 
 const GrossProfitMargin = () => {
   let grossProfitMarginData = grossProfitData("Gross profit margin");
+
+  // console.log(grossProfitMarginData);
   const [percentageChange, setPercentageChange] = useState(null);
   const [formattedTitle, setFormattedTitle] = useState("");
 
-  console.log(grossProfitMarginData);
+  // console.log(grossProfitMarginData);
 
   useEffect(() => {
     const len = grossProfitMarginData.length;
-    const currentYear = grossProfitMarginData[len - 1]["Gross Profit"];
-    const previousYear = grossProfitMarginData[len - 2]["Gross Profit"];
+    const currentYear = grossProfitMarginData[len - 1]["Gross profit margin"];
+    const previousYear = grossProfitMarginData[len - 2]["Gross profit margin"];
 
     const change = ((currentYear - previousYear) / previousYear) * 100;
     setPercentageChange(change);
@@ -41,35 +43,31 @@ const GrossProfitMargin = () => {
   return (
     <Card
       decoration="left"
-      decorationColor="blue"
-      className="max-w-2xl mx-auto p-6"
+      decorationColor="purple"
+      className="max-w-[52rem] max-h-screen mx-3 mt-2.5 p-6 bg-white"
     >
       <Flex justifyContent="start" className="space-x-4">
         <Icon variant="outlined" icon={FaDollarSign} size="sm" color="indigo" />
-        <Title className="truncate">Gross Profit Margin</Title>
+        <Title className="truncate font-semiBold">Gross Profit Margin</Title>
       </Flex>
       <div>
         <BarChart
-          className="h-72 mt-1 max-w-2xl"
+          className="h-72 mt-1 max-w-[52rem] text-black"
           data={grossProfitMarginData}
           index="fy"
-          categories={["Gross Profit"]}
+          categories={["Gross profit margin"]}
           colors={["indigo"]}
           yAxisWidth={30}
-
-          // Add other relevant props as needed
+          showAnimation={true}
         />
-        {percentageChange !== null && (
+        {/*percentageChange !== null && (
           <Callout
             title={formattedTitle}
             icon={percentageChange >= 0 ? TrendingUpIcon : TrendingDownIcon}
             color={percentageChange >= 0 ? "emerald" : "rose"}
             className="mt-4"
-          >
-            {/* Display the text accordingly */}
-          </Callout>
-        )}
-        {/* Add Callout for percentage change if needed */}
+          ></Callout>
+        ) */}
       </div>
     </Card>
   );
